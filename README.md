@@ -46,26 +46,33 @@ Luego, abre el archivo .env y configura los detalles de tu base de datos. Asegú
 6. **Crea la base de datos:**
 Abre XAMPP y asegúrate de que el servidor Apache y MySQL estén en ejecución.
 Accede a phpMyAdmin.
-Crea una nueva base de datos con el nombre que configuraste en el archivo .env.
-
+importa la base de datos que esta en la carpeta del proyecto de nombre to_do.sql.
 7. **Ejecuta las migraciones Para crear las tablas en la base de datos, ejecuta el siguiente comando:**
+    ```powershell
+   php artisan key:generate
+
+8. **Ejecuta las migraciones Para crear las tablas en la base de datos, ejecuta el siguiente comando:**
     ```powershell
    php artisan migrate
 
-8. **Instala las dependencias de Node.js (opcional) Si tu proyecto utiliza JavaScript para el frontend, instala las dependencias de Node.js:**
+9. **Instala las dependencias de Node.js (opcional) Si tu proyecto utiliza JavaScript para el frontend, instala las dependencias de Node.js:**
     ```powershell
    npm install
 
-9. **Compila los assets (opcional) Si utilizaste Laravel Mix para gestionar los assets, ejecuta el siguiente comando para compilar los archivos CSS y JavaScript:**
+10. **Compila los assets (opcional) Si utilizaste Laravel Mix para gestionar los assets, ejecuta el siguiente comando para compilar los archivos CSS y JavaScript:**
     ```powershell
    npm run dev
 9. **Compila los assets (opcional) Si utilizaste Laravel Mix para gestionar los assets, ejecuta el siguiente comando para compilar los archivos CSS y JavaScript:**
     ```powershell
    php artisan serve
 
-    
-
-
 Ahora puedes acceder a tu aplicación en tu navegador web en la siguiente URL:
 
    http://localhost:8000
+
+
+puedes registrar un nuevo usuario o puedes ingresar con el usuario que ya esta registrado:
+mail:
+user@gmail.com
+password:
+12345678
