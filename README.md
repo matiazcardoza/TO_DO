@@ -60,8 +60,7 @@ importa la base de datos que esta en la carpeta del proyecto de nombre to_do.sql
    npm install
 
 10. **Compila los assets (opcional) Si utilizaste Laravel Mix para gestionar los assets, ejecuta el siguiente comando para compilar los archivos CSS y JavaScript:**
-    ```powershell
-   npm run dev
+    ```powershellnpm run dev
 9. **Compila los assets (opcional) Si utilizaste Laravel Mix para gestionar los assets, ejecuta el siguiente comando para compilar los archivos CSS y JavaScript:**
     ```powershell
    php artisan serve
