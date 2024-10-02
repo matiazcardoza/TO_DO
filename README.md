@@ -61,12 +61,8 @@ Crea una nueva base de datos con el nombre que configuraste en el archivo .env.
    npm run dev
 
 10. **Ejecutar el Proyecto Para iniciar el servidor de desarrollo de Laravel, ejecuta el siguiente comando:**
-    ```powershell
    php artisan serve
 
-10. **Ejecutar el Proyecto Para iniciar el servidor de desarrollo de Laravel, ejecuta el siguiente comando:**
-    ```powershell
-   php artisan serve
 
 Ahora puedes acceder a tu aplicación en tu navegador web en la siguiente URL:
 
