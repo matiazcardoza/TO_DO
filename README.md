@@ -64,6 +64,6 @@ Crea una nueva base de datos con el nombre que configuraste en el archivo .env.
     ```powershell
    php artisan serve
 
-   ##Ahora puedes acceder a tu aplicación en tu navegador web en la siguiente URL:
+##Ahora puedes acceder a tu aplicación en tu navegador web en la siguiente URL:
 
    http://localhost:8000
