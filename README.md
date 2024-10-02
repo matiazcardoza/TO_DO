@@ -61,10 +61,9 @@ Crea una nueva base de datos con el nombre que configuraste en el archivo .env.
    npm run dev
 9. **Compila los assets (opcional) Si utilizaste Laravel Mix para gestionar los assets, ejecuta el siguiente comando para compilar los archivos CSS y JavaScript:**
     ```powershell
-   npm run dev
-
-    10. **Ejecutar el Proyecto Para iniciar el servidor de desarrollo de Laravel, ejecuta el siguiente comando:**
    php artisan serve
+
+    
 
 
 Ahora puedes acceder a tu aplicación en tu navegador web en la siguiente URL:
