@@ -47,7 +47,7 @@ Luego, abre el archivo .env y configura los detalles de tu base de datos. Asegú
 Abre XAMPP y asegúrate de que el servidor Apache y MySQL estén en ejecución.
 Accede a phpMyAdmin.
 importa la base de datos que esta en la carpeta del proyecto de nombre to_do.sql.
-7. **Ejecuta las migraciones Para crear las tablas en la base de datos, ejecuta el siguiente comando:**
+7. **Generar una clave secreta, ejecuta el siguiente comando:**
     ```powershell
    php artisan key:generate
 
@@ -55,15 +55,15 @@ importa la base de datos que esta en la carpeta del proyecto de nombre to_do.sql
     ```powershell
    php artisan migrate
 
-9. **Instala las dependencias de Node.js (opcional) Si tu proyecto utiliza JavaScript para el frontend, instala las dependencias de Node.js:**
+9. **Instala las dependencias de Node.js (opcional) El proyecto utiliza JavaScript para el frontend, instala las dependencias de Node.js:**
     ```powershell
    npm install
 
-10. **Compila los assets (opcional) Si utilizaste Laravel Mix para gestionar los assets, ejecuta el siguiente comando para compilar los archivos CSS y JavaScript:**
+10. **Compila los assets (opcional) utilize Laravel Mix para gestionar los assets, ejecuta el siguiente comando para compilar los archivos CSS y JavaScript:**
     ```powershell
     npm run dev
     
-9. **Compila los assets (opcional) Si utilizaste Laravel Mix para gestionar los assets, ejecuta el siguiente comando para compilar los archivos CSS y JavaScript:**
+9. **Ejecutar el Proyecto Para iniciar el servidor de desarrollo de Laravel, ejecuta el siguiente comando:**
     ```powershell
    php artisan serve
 
