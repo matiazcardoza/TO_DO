@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-10-2024 a las 08:54:26
+-- Tiempo de generación: 04-10-2024 a las 22:11:21
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -116,7 +116,13 @@ CREATE TABLE `tasks` (
 INSERT INTO `tasks` (`id`, `title`, `description`, `status`, `due_date`, `priority`, `created_at`, `updated_at`, `completed_at`) VALUES
 (2, 'crear frontend', 'creacion frontend', 'completada', '2024-10-10 16:20:00', 'media', '2024-10-02 02:20:14', '2024-10-02 04:54:56', '2024-10-01 23:54:56'),
 (3, 'profile edit', 'edicion de profile', 'pendiente', '2024-10-25 16:59:00', 'alta', '2024-10-02 03:00:06', '2024-10-02 06:20:06', NULL),
-(4, 'back end personalizar', 'personalizar backend', 'pendiente', '2024-10-23 23:54:00', 'media', '2024-10-02 04:54:04', '2024-10-02 04:54:04', NULL);
+(4, 'back end personalizar', 'personalizar backend', 'pendiente', '2024-10-23 23:54:00', 'media', '2024-10-02 04:54:04', '2024-10-02 04:54:04', NULL),
+(5, 'back photo', 'back', 'pendiente', '2024-10-18 02:59:00', 'alta', '2024-10-04 08:00:02', '2024-10-04 08:00:02', NULL),
+(8, 'sass', 'dasdsd', 'pendiente', '2024-10-17 04:16:00', 'media', '2024-10-04 09:16:44', '2024-10-04 09:16:44', NULL),
+(9, 'nueva tarea', 'nueva tarea', 'completada', '2024-10-10 04:27:00', 'media', '2024-10-04 09:27:41', '2024-10-04 20:03:06', '2024-10-04 15:03:06'),
+(10, 'prueva1', 'prueva 1', 'completada', '2024-10-09 04:35:00', 'media', '2024-10-04 09:35:29', '2024-10-04 20:02:37', '2024-10-04 15:02:37'),
+(11, 'prueva 2', 'prueva 2', 'pendiente', '2024-10-17 04:43:00', 'media', '2024-10-04 09:43:17', '2024-10-04 20:06:26', '2024-10-04 15:02:33'),
+(15, 'prueba 7', 'prueba 7', 'pendiente', '2024-10-09 15:06:00', 'media', '2024-10-04 20:06:10', '2024-10-04 20:06:10', NULL);
 
 -- --------------------------------------------------------
 
@@ -212,7 +218,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT de la tabla `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
