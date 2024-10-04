@@ -24,7 +24,7 @@
             min-height: 100vh; /* Asegúrate de que el body cubra toda la pantalla */
         }
     </style>
-
+    @livewireStyles
 </head>
 <body class="font-sans text-gray-900 antialiased">
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
@@ -38,5 +38,6 @@
             {{ $slot }} <!-- Aquí se incluirá el contenido del login -->
         </div>
     </div>
+    @livewireScripts
 </body>
 </html>

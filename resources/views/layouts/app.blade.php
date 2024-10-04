@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,55 +18,81 @@
     <style>
         /* Estilo para el fondo */
         body {
-            background-image: url('{{ asset('images/fondo.jpg') }}'); /* Cambia esta ruta a la de tu imagen */
-            background-size: cover; /* Para cubrir toda la pantalla */
-            background-repeat: no-repeat; /* No repetir la imagen */
-            background-position: center; /* Centrar la imagen */
-            min-height: 100vh; /* Asegúrate de que el body cubra toda la pantalla */
+            background-image: url('{{ asset('images/fondo.jpg') }}');
+            /* Cambia esta ruta a la de tu imagen */
+            background-size: cover;
+            /* Para cubrir toda la pantalla */
+            background-repeat: no-repeat;
+            /* No repetir la imagen */
+            background-position: center;
+            /* Centrar la imagen */
+            min-height: 100vh;
+            /* Asegúrate de que el body cubra toda la pantalla */
         }
-    
+
         /* Estilos para el fondo animado */
         .bg-animated {
-            position: absolute; /* Cambiar a absolute si quieres que el fondo se mueva al hacer scroll */
+            position: absolute;
+            /* Cambiar a absolute si quieres que el fondo se mueva al hacer scroll */
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(270deg, rgba(167, 192, 229, 0.5), rgba(246, 213, 224, 0.5)); /* Añadir transparencia */
+            background: linear-gradient(270deg, rgba(167, 192, 229, 0.5), rgba(246, 213, 224, 0.5));
+            /* Añadir transparencia */
             background-size: 400% 400%;
             animation: gradientAnimation 15s ease infinite;
-            z-index: 0; /* Asegúrate de que el fondo animado esté detrás de todo */
+            z-index: 0;
+            /* Asegúrate de que el fondo animado esté detrás de todo */
         }
-    
+
         /* Navegación */
         nav {
-            position: relative; /* Asegúrate de que el nav esté en una posición que permita el uso de z-index */
-            z-index: 10; /* Asegúrate de que el nav esté por encima del fondo */
+            position: relative;
+            /* Asegúrate de que el nav esté en una posición que permita el uso de z-index */
+            z-index: 10;
+            /* Asegúrate de que el nav esté por encima del fondo */
         }
-    
+
         /* Animación para los elementos de la página */
         .fade-in {
             animation: fadeIn 0.6s ease-in forwards;
         }
-    
+
         @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
-    
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    @livewireStyles
 </head>
+
 <body class="font-sans antialiased">
     <div class="min-h-screen">
         <div class="bg-animated"></div> <!-- Fondo animado -->
@@ -82,12 +109,18 @@
         @endif
 
         <!-- Page Content -->
-        <main class="fade-in z-10 relative"> <!-- Agregar z-index para asegurarse de que el contenido esté por encima -->
+        <main class="fade-in z-10 relative">
+            <!-- Agregar z-index para asegurarse de que el contenido esté por encima -->
             {{ $slot }}
         </main>
     </div>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @livewireScripts
 </body>
+
 </html>

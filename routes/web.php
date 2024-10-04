@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TaskController;
+use App\Http\Livewire\ShowdashboardTasks;
+use App\Http\Livewire\CreateTasks;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,12 +39,16 @@ Route::middleware(['auth', 'verified'])->group(function () {
      */
     Route::get('/users/tasks', [TaskController::class, 'index'])->name('users/tasks');
 
+    //implementacion de ruta livewire
+    Route::get('/users/tasks', ShowdashboardTasks::class)->name('users/tasks');
+    
+
     /**
      * Muestra el formulario para crear una nueva tarea.
      * 
      * @return \Illuminate\View\View  Retorna la vista del formulario de creación.
      */
-    Route::get('/users/tasks/create', [TaskController::class, 'create'])->name('users/tasks/create');
+    Route::get('/users/tasks/create', CreateTasks::class)->name('users/tasks/create');
 
     /**
      * Guarda una nueva tarea en la base de datos.
